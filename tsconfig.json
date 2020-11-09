@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
     "outDir": "dist",
     "rootDir": "src",
-    "target": "ES3",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "strict": true,
+    "target": "ES3"
   },
   "include": [".eslintrc.js", "./src/**/*"]
 }
