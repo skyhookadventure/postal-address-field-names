@@ -9,7 +9,7 @@ This module exports address field names for every country, in English. This is
 useful as many countries have subtle differences in field names (e.g. Postcode
 in the UK vs ZIP code in the US). It is based on the Oasis XAL standard for addresses.
 
-The output is c.33kb (minified) with no dependencies. It also includes
+The output is c.33kb (minified) with no dependencies, and it will work on both node & the browser. It also includes
 Typescript types for your convenience.
 
 ## Sample
