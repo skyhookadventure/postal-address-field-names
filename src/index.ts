@@ -1,7 +1,17 @@
-const postalAddressCountries = [
+import { CountryAddressDetails, CountryCodes } from "./types";
+
+/**
+ * Export typescript types
+ */
+export { AddressFields, CountryAddressDetails, CountryCodes } from "./types";
+
+/**
+ * Postal Address Field Names
+ */
+const postalAddressCountries: CountryAddressDetails[] = [
   {
     name: "Afghanistan",
-    iso: "AF",
+    iso: CountryCodes.AF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -11,7 +21,7 @@ const postalAddressCountries = [
   },
   {
     name: "Aland Islands",
-    iso: "AX",
+    iso: CountryCodes.AX,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -21,7 +31,7 @@ const postalAddressCountries = [
   },
   {
     name: "Albania",
-    iso: "AL",
+    iso: CountryCodes.AL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -30,7 +40,7 @@ const postalAddressCountries = [
   },
   {
     name: "Algeria",
-    iso: "DZ",
+    iso: CountryCodes.DZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -40,7 +50,7 @@ const postalAddressCountries = [
   },
   {
     name: "American Samoa",
-    iso: "AS",
+    iso: CountryCodes.AS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -51,7 +61,7 @@ const postalAddressCountries = [
   },
   {
     name: "Andorra",
-    iso: "AD",
+    iso: CountryCodes.AD,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -61,7 +71,7 @@ const postalAddressCountries = [
   },
   {
     name: "Angola",
-    iso: "AO",
+    iso: CountryCodes.AO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -70,7 +80,7 @@ const postalAddressCountries = [
   },
   {
     name: "Anguilla",
-    iso: "AI",
+    iso: CountryCodes.AI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -80,7 +90,7 @@ const postalAddressCountries = [
   },
   {
     name: "Antarctica",
-    iso: "AQ",
+    iso: CountryCodes.AQ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -90,7 +100,7 @@ const postalAddressCountries = [
   },
   {
     name: "Antigua and Barbuda",
-    iso: "AG",
+    iso: CountryCodes.AG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -99,7 +109,7 @@ const postalAddressCountries = [
   },
   {
     name: "Argentina",
-    iso: "AR",
+    iso: CountryCodes.AR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -110,7 +120,7 @@ const postalAddressCountries = [
   },
   {
     name: "Armenia",
-    iso: "AM",
+    iso: CountryCodes.AM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -121,7 +131,7 @@ const postalAddressCountries = [
   },
   {
     name: "Aruba",
-    iso: "AW",
+    iso: CountryCodes.AW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -131,7 +141,7 @@ const postalAddressCountries = [
   },
   {
     name: "Australia",
-    iso: "AU",
+    iso: CountryCodes.AU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -142,7 +152,7 @@ const postalAddressCountries = [
   },
   {
     name: "Austria",
-    iso: "AT",
+    iso: CountryCodes.AT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -152,7 +162,7 @@ const postalAddressCountries = [
   },
   {
     name: "Azerbaijan",
-    iso: "AZ",
+    iso: CountryCodes.AZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -162,7 +172,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bahamas",
-    iso: "BS",
+    iso: CountryCodes.BS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -172,7 +182,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bahrain",
-    iso: "BH",
+    iso: CountryCodes.BH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -182,7 +192,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bangladesh",
-    iso: "BD",
+    iso: CountryCodes.BD,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -192,7 +202,7 @@ const postalAddressCountries = [
   },
   {
     name: "Barbados",
-    iso: "BB",
+    iso: CountryCodes.BB,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -201,7 +211,7 @@ const postalAddressCountries = [
   },
   {
     name: "Belarus",
-    iso: "BY",
+    iso: CountryCodes.BY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -212,7 +222,7 @@ const postalAddressCountries = [
   },
   {
     name: "Belgium",
-    iso: "BE",
+    iso: CountryCodes.BE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -222,7 +232,7 @@ const postalAddressCountries = [
   },
   {
     name: "Belize",
-    iso: "BZ",
+    iso: CountryCodes.BZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -232,7 +242,7 @@ const postalAddressCountries = [
   },
   {
     name: "Benin",
-    iso: "BJ",
+    iso: CountryCodes.BJ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -241,7 +251,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bermuda",
-    iso: "BM",
+    iso: CountryCodes.BM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -251,7 +261,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bhutan",
-    iso: "BT",
+    iso: CountryCodes.BT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -261,7 +271,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bolivia",
-    iso: "BO",
+    iso: CountryCodes.BO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -270,7 +280,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bosnia and Herzegovina",
-    iso: "BA",
+    iso: CountryCodes.BA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -280,7 +290,7 @@ const postalAddressCountries = [
   },
   {
     name: "Botswana",
-    iso: "BW",
+    iso: CountryCodes.BW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -289,7 +299,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bouvet Island",
-    iso: "BV",
+    iso: CountryCodes.BV,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -299,7 +309,7 @@ const postalAddressCountries = [
   },
   {
     name: "Brazil",
-    iso: "BR",
+    iso: CountryCodes.BR,
     fields: {
       addressLine1: "Thoroughfare",
       addressLine2: "Complement",
@@ -311,7 +321,7 @@ const postalAddressCountries = [
   },
   {
     name: "British Indian Ocean Territory",
-    iso: "IO",
+    iso: CountryCodes.IO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -321,7 +331,7 @@ const postalAddressCountries = [
   },
   {
     name: "British Virgin Islands",
-    iso: "VG",
+    iso: CountryCodes.VG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -331,7 +341,7 @@ const postalAddressCountries = [
   },
   {
     name: "Brunei",
-    iso: "BN",
+    iso: CountryCodes.BN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -341,7 +351,7 @@ const postalAddressCountries = [
   },
   {
     name: "Bulgaria",
-    iso: "BG",
+    iso: CountryCodes.BG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -351,7 +361,7 @@ const postalAddressCountries = [
   },
   {
     name: "Burkina Faso",
-    iso: "BF",
+    iso: CountryCodes.BF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -361,7 +371,7 @@ const postalAddressCountries = [
   },
   {
     name: "Burundi",
-    iso: "BI",
+    iso: CountryCodes.BI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -370,7 +380,7 @@ const postalAddressCountries = [
   },
   {
     name: "Cambodia",
-    iso: "KH",
+    iso: CountryCodes.KH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -380,7 +390,7 @@ const postalAddressCountries = [
   },
   {
     name: "Cameroon",
-    iso: "CM",
+    iso: CountryCodes.CM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -389,7 +399,7 @@ const postalAddressCountries = [
   },
   {
     name: "Canada",
-    iso: "CA",
+    iso: CountryCodes.CA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -400,7 +410,7 @@ const postalAddressCountries = [
   },
   {
     name: "Cape Verde",
-    iso: "CV",
+    iso: CountryCodes.CV,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -411,7 +421,7 @@ const postalAddressCountries = [
   },
   {
     name: "Cayman Islands",
-    iso: "KY",
+    iso: CountryCodes.KY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -421,7 +431,7 @@ const postalAddressCountries = [
   },
   {
     name: "Central African Republic",
-    iso: "CF",
+    iso: CountryCodes.CF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -430,7 +440,7 @@ const postalAddressCountries = [
   },
   {
     name: "Chad",
-    iso: "TD",
+    iso: CountryCodes.TD,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -439,7 +449,7 @@ const postalAddressCountries = [
   },
   {
     name: "Chile",
-    iso: "CL",
+    iso: CountryCodes.CL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -450,7 +460,7 @@ const postalAddressCountries = [
   },
   {
     name: "China",
-    iso: "CN",
+    iso: CountryCodes.CN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -462,7 +472,7 @@ const postalAddressCountries = [
   },
   {
     name: "Christmas Island",
-    iso: "CX",
+    iso: CountryCodes.CX,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -473,7 +483,7 @@ const postalAddressCountries = [
   },
   {
     name: "Cocos (Keeling) Islands",
-    iso: "CC",
+    iso: CountryCodes.CC,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -484,7 +494,7 @@ const postalAddressCountries = [
   },
   {
     name: "Colombia",
-    iso: "CO",
+    iso: CountryCodes.CO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -493,7 +503,7 @@ const postalAddressCountries = [
   },
   {
     name: "Comoros",
-    iso: "KM",
+    iso: CountryCodes.KM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -502,7 +512,7 @@ const postalAddressCountries = [
   },
   {
     name: "Congo (Brazzaville)",
-    iso: "CG",
+    iso: CountryCodes.CG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -511,7 +521,7 @@ const postalAddressCountries = [
   },
   {
     name: "Congo (Kinshasa)",
-    iso: "CD",
+    iso: CountryCodes.CD,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -521,7 +531,7 @@ const postalAddressCountries = [
   },
   {
     name: "Cook Islands",
-    iso: "CK",
+    iso: CountryCodes.CK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -531,7 +541,7 @@ const postalAddressCountries = [
   },
   {
     name: "Costa Rica",
-    iso: "CR",
+    iso: CountryCodes.CR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -541,7 +551,7 @@ const postalAddressCountries = [
   },
   {
     name: "Cuba",
-    iso: "CU",
+    iso: CountryCodes.CU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -551,7 +561,7 @@ const postalAddressCountries = [
   },
   {
     name: "Croatia",
-    iso: "HR",
+    iso: CountryCodes.HR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -561,7 +571,7 @@ const postalAddressCountries = [
   },
   {
     name: "CuraÁao",
-    iso: "CW",
+    iso: CountryCodes.CW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -571,7 +581,7 @@ const postalAddressCountries = [
   },
   {
     name: "Cyprus",
-    iso: "CY",
+    iso: CountryCodes.CY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -581,7 +591,7 @@ const postalAddressCountries = [
   },
   {
     name: "Czech Republic",
-    iso: "CZ",
+    iso: CountryCodes.CZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -591,7 +601,7 @@ const postalAddressCountries = [
   },
   {
     name: "Denmark",
-    iso: "DK",
+    iso: CountryCodes.DK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -601,7 +611,7 @@ const postalAddressCountries = [
   },
   {
     name: "Djibouti",
-    iso: "DJ",
+    iso: CountryCodes.DJ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -610,7 +620,7 @@ const postalAddressCountries = [
   },
   {
     name: "Dominica",
-    iso: "DM",
+    iso: CountryCodes.DM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -619,7 +629,7 @@ const postalAddressCountries = [
   },
   {
     name: "Dominican Republic",
-    iso: "DO",
+    iso: CountryCodes.DO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -630,7 +640,7 @@ const postalAddressCountries = [
   },
   {
     name: "Ecuador",
-    iso: "EC",
+    iso: CountryCodes.EC,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -640,7 +650,7 @@ const postalAddressCountries = [
   },
   {
     name: "Egypt",
-    iso: "EG",
+    iso: CountryCodes.EG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -651,7 +661,7 @@ const postalAddressCountries = [
   },
   {
     name: "El Salvador",
-    iso: "SV",
+    iso: CountryCodes.SV,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -662,7 +672,7 @@ const postalAddressCountries = [
   },
   {
     name: "Equatorial Guinea",
-    iso: "GQ",
+    iso: CountryCodes.GQ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -671,7 +681,7 @@ const postalAddressCountries = [
   },
   {
     name: "Eritrea",
-    iso: "ER",
+    iso: CountryCodes.ER,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -680,7 +690,7 @@ const postalAddressCountries = [
   },
   {
     name: "Estonia",
-    iso: "EE",
+    iso: CountryCodes.EE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -690,7 +700,7 @@ const postalAddressCountries = [
   },
   {
     name: "Ethiopia",
-    iso: "ET",
+    iso: CountryCodes.ET,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -700,7 +710,7 @@ const postalAddressCountries = [
   },
   {
     name: "Falkland Islands",
-    iso: "FK",
+    iso: CountryCodes.FK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -710,7 +720,7 @@ const postalAddressCountries = [
   },
   {
     name: "Faroe Islands",
-    iso: "FO",
+    iso: CountryCodes.FO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -720,7 +730,7 @@ const postalAddressCountries = [
   },
   {
     name: "Fiji",
-    iso: "FJ",
+    iso: CountryCodes.FJ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -730,7 +740,7 @@ const postalAddressCountries = [
   },
   {
     name: "Finland",
-    iso: "FI",
+    iso: CountryCodes.FI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -740,7 +750,7 @@ const postalAddressCountries = [
   },
   {
     name: "France",
-    iso: "FR",
+    iso: CountryCodes.FR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -750,7 +760,7 @@ const postalAddressCountries = [
   },
   {
     name: "French Guiana",
-    iso: "GF",
+    iso: CountryCodes.GF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -760,7 +770,7 @@ const postalAddressCountries = [
   },
   {
     name: "French Polynesia",
-    iso: "PF",
+    iso: CountryCodes.PF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -771,7 +781,7 @@ const postalAddressCountries = [
   },
   {
     name: "French Southern Territories",
-    iso: "TF",
+    iso: CountryCodes.TF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -781,7 +791,7 @@ const postalAddressCountries = [
   },
   {
     name: "Gabon",
-    iso: "GA",
+    iso: CountryCodes.GA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -791,7 +801,7 @@ const postalAddressCountries = [
   },
   {
     name: "Gambia",
-    iso: "GM",
+    iso: CountryCodes.GM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -800,7 +810,7 @@ const postalAddressCountries = [
   },
   {
     name: "Georgia",
-    iso: "GE",
+    iso: CountryCodes.GE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -810,7 +820,7 @@ const postalAddressCountries = [
   },
   {
     name: "Germany",
-    iso: "DE",
+    iso: CountryCodes.DE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -820,7 +830,7 @@ const postalAddressCountries = [
   },
   {
     name: "Ghana",
-    iso: "GH",
+    iso: CountryCodes.GH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -829,7 +839,7 @@ const postalAddressCountries = [
   },
   {
     name: "Gibraltar",
-    iso: "GI",
+    iso: CountryCodes.GI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -838,7 +848,7 @@ const postalAddressCountries = [
   },
   {
     name: "Greece",
-    iso: "GR",
+    iso: CountryCodes.GR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -848,7 +858,7 @@ const postalAddressCountries = [
   },
   {
     name: "Greenland",
-    iso: "GL",
+    iso: CountryCodes.GL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -858,7 +868,7 @@ const postalAddressCountries = [
   },
   {
     name: "Grenada",
-    iso: "GD",
+    iso: CountryCodes.GD,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -867,7 +877,7 @@ const postalAddressCountries = [
   },
   {
     name: "Guadeloupe",
-    iso: "GP",
+    iso: CountryCodes.GP,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -877,7 +887,7 @@ const postalAddressCountries = [
   },
   {
     name: "Guam",
-    iso: "GU",
+    iso: CountryCodes.GU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -888,7 +898,7 @@ const postalAddressCountries = [
   },
   {
     name: "Guatemala",
-    iso: "GT",
+    iso: CountryCodes.GT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -898,7 +908,7 @@ const postalAddressCountries = [
   },
   {
     name: "Guernsey",
-    iso: "GG",
+    iso: CountryCodes.GG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -908,7 +918,7 @@ const postalAddressCountries = [
   },
   {
     name: "Guinea",
-    iso: "GN",
+    iso: CountryCodes.GN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -918,7 +928,7 @@ const postalAddressCountries = [
   },
   {
     name: "Guinea-Bissau",
-    iso: "GW",
+    iso: CountryCodes.GW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -928,7 +938,7 @@ const postalAddressCountries = [
   },
   {
     name: "Guyana",
-    iso: "GY",
+    iso: CountryCodes.GY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -937,7 +947,7 @@ const postalAddressCountries = [
   },
   {
     name: "Haiti",
-    iso: "HT",
+    iso: CountryCodes.HT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -947,7 +957,7 @@ const postalAddressCountries = [
   },
   {
     name: "Heard Island and McDonald Islands",
-    iso: "HM",
+    iso: CountryCodes.HM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -957,7 +967,7 @@ const postalAddressCountries = [
   },
   {
     name: "Honduras",
-    iso: "HN",
+    iso: CountryCodes.HN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -968,7 +978,7 @@ const postalAddressCountries = [
   },
   {
     name: "Hong Kong S.A.R., China",
-    iso: "HK",
+    iso: CountryCodes.HK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -978,7 +988,7 @@ const postalAddressCountries = [
   },
   {
     name: "Hungary",
-    iso: "HU",
+    iso: CountryCodes.HU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -988,7 +998,7 @@ const postalAddressCountries = [
   },
   {
     name: "Iceland",
-    iso: "IS",
+    iso: CountryCodes.IS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -998,7 +1008,7 @@ const postalAddressCountries = [
   },
   {
     name: "India",
-    iso: "IN",
+    iso: CountryCodes.IN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1009,7 +1019,7 @@ const postalAddressCountries = [
   },
   {
     name: "Indonesia",
-    iso: "ID",
+    iso: CountryCodes.ID,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1020,7 +1030,7 @@ const postalAddressCountries = [
   },
   {
     name: "Iran",
-    iso: "IR",
+    iso: CountryCodes.IR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1032,7 +1042,7 @@ const postalAddressCountries = [
   },
   {
     name: "Iraq",
-    iso: "IQ",
+    iso: CountryCodes.IQ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1043,7 +1053,7 @@ const postalAddressCountries = [
   },
   {
     name: "Ireland",
-    iso: "IE",
+    iso: CountryCodes.IE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1054,7 +1064,7 @@ const postalAddressCountries = [
   },
   {
     name: "Isle of Man",
-    iso: "IM",
+    iso: CountryCodes.IM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1064,7 +1074,7 @@ const postalAddressCountries = [
   },
   {
     name: "Israel",
-    iso: "IL",
+    iso: CountryCodes.IL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1074,7 +1084,7 @@ const postalAddressCountries = [
   },
   {
     name: "Italy",
-    iso: "IT",
+    iso: CountryCodes.IT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1085,7 +1095,7 @@ const postalAddressCountries = [
   },
   {
     name: "Ivory Coast",
-    iso: "CI",
+    iso: CountryCodes.CI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1095,7 +1105,7 @@ const postalAddressCountries = [
   },
   {
     name: "Jamaica",
-    iso: "JM",
+    iso: CountryCodes.JM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1105,7 +1115,7 @@ const postalAddressCountries = [
   },
   {
     name: "Japan",
-    iso: "JP",
+    iso: CountryCodes.JP,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1116,7 +1126,7 @@ const postalAddressCountries = [
   },
   {
     name: "Jersey",
-    iso: "JE",
+    iso: CountryCodes.JE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1126,7 +1136,7 @@ const postalAddressCountries = [
   },
   {
     name: "Jordan",
-    iso: "JO",
+    iso: CountryCodes.JO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1137,7 +1147,7 @@ const postalAddressCountries = [
   },
   {
     name: "Kazakhstan",
-    iso: "KZ",
+    iso: CountryCodes.KZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1148,7 +1158,7 @@ const postalAddressCountries = [
   },
   {
     name: "Kenya",
-    iso: "KE",
+    iso: CountryCodes.KE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1158,7 +1168,7 @@ const postalAddressCountries = [
   },
   {
     name: "Kiribati",
-    iso: "KI",
+    iso: CountryCodes.KI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1168,7 +1178,7 @@ const postalAddressCountries = [
   },
   {
     name: "Kuwait",
-    iso: "KW",
+    iso: CountryCodes.KW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1179,7 +1189,7 @@ const postalAddressCountries = [
   },
   {
     name: "Kyrgyzstan",
-    iso: "KG",
+    iso: CountryCodes.KG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1189,7 +1199,7 @@ const postalAddressCountries = [
   },
   {
     name: "Laos",
-    iso: "LA",
+    iso: CountryCodes.LA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1199,7 +1209,7 @@ const postalAddressCountries = [
   },
   {
     name: "Latvia",
-    iso: "LV",
+    iso: CountryCodes.LV,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1209,7 +1219,7 @@ const postalAddressCountries = [
   },
   {
     name: "Lebanon",
-    iso: "LB",
+    iso: CountryCodes.LB,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1219,7 +1229,7 @@ const postalAddressCountries = [
   },
   {
     name: "Lesotho",
-    iso: "LS",
+    iso: CountryCodes.LS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1229,7 +1239,7 @@ const postalAddressCountries = [
   },
   {
     name: "Liberia",
-    iso: "LR",
+    iso: CountryCodes.LR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1239,7 +1249,7 @@ const postalAddressCountries = [
   },
   {
     name: "Libya",
-    iso: "LY",
+    iso: CountryCodes.LY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1248,7 +1258,7 @@ const postalAddressCountries = [
   },
   {
     name: "Liechtenstein",
-    iso: "LI",
+    iso: CountryCodes.LI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1258,7 +1268,7 @@ const postalAddressCountries = [
   },
   {
     name: "Lithuania",
-    iso: "LT",
+    iso: CountryCodes.LT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1268,7 +1278,7 @@ const postalAddressCountries = [
   },
   {
     name: "Luxembourg",
-    iso: "LU",
+    iso: CountryCodes.LU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1278,7 +1288,7 @@ const postalAddressCountries = [
   },
   {
     name: "Macao S.A.R., China",
-    iso: "MO",
+    iso: CountryCodes.MO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1288,7 +1298,7 @@ const postalAddressCountries = [
   },
   {
     name: "Macedonia",
-    iso: "MK",
+    iso: CountryCodes.MK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1298,7 +1308,7 @@ const postalAddressCountries = [
   },
   {
     name: "Madagascar",
-    iso: "MG",
+    iso: CountryCodes.MG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1308,7 +1318,7 @@ const postalAddressCountries = [
   },
   {
     name: "Malawi",
-    iso: "MW",
+    iso: CountryCodes.MW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1318,7 +1328,7 @@ const postalAddressCountries = [
   },
   {
     name: "Malaysia",
-    iso: "MY",
+    iso: CountryCodes.MY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1330,7 +1340,7 @@ const postalAddressCountries = [
   },
   {
     name: "Maldives",
-    iso: "MV",
+    iso: CountryCodes.MV,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1340,7 +1350,7 @@ const postalAddressCountries = [
   },
   {
     name: "Mali",
-    iso: "ML",
+    iso: CountryCodes.ML,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1349,7 +1359,7 @@ const postalAddressCountries = [
   },
   {
     name: "Malta",
-    iso: "MT",
+    iso: CountryCodes.MT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1359,7 +1369,7 @@ const postalAddressCountries = [
   },
   {
     name: "Marshall Islands",
-    iso: "MH",
+    iso: CountryCodes.MH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1370,7 +1380,7 @@ const postalAddressCountries = [
   },
   {
     name: "Martinique",
-    iso: "MQ",
+    iso: CountryCodes.MQ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1380,7 +1390,7 @@ const postalAddressCountries = [
   },
   {
     name: "Mauritania",
-    iso: "MR",
+    iso: CountryCodes.MR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1389,7 +1399,7 @@ const postalAddressCountries = [
   },
   {
     name: "Mauritius",
-    iso: "MU",
+    iso: CountryCodes.MU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1399,7 +1409,7 @@ const postalAddressCountries = [
   },
   {
     name: "Mayotte",
-    iso: "YT",
+    iso: CountryCodes.YT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1409,7 +1419,7 @@ const postalAddressCountries = [
   },
   {
     name: "Mexico",
-    iso: "MX",
+    iso: CountryCodes.MX,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1421,7 +1431,7 @@ const postalAddressCountries = [
   },
   {
     name: "Micronesia",
-    iso: "FM",
+    iso: CountryCodes.FM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1432,7 +1442,7 @@ const postalAddressCountries = [
   },
   {
     name: "Moldova",
-    iso: "MD",
+    iso: CountryCodes.MD,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1442,7 +1452,7 @@ const postalAddressCountries = [
   },
   {
     name: "Monaco",
-    iso: "MC",
+    iso: CountryCodes.MC,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1452,7 +1462,7 @@ const postalAddressCountries = [
   },
   {
     name: "Mongolia",
-    iso: "MN",
+    iso: CountryCodes.MN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1463,7 +1473,7 @@ const postalAddressCountries = [
   },
   {
     name: "Montenegro",
-    iso: "ME",
+    iso: CountryCodes.ME,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1473,7 +1483,7 @@ const postalAddressCountries = [
   },
   {
     name: "Montserrat",
-    iso: "MS",
+    iso: CountryCodes.MS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1483,7 +1493,7 @@ const postalAddressCountries = [
   },
   {
     name: "Morocco",
-    iso: "MA",
+    iso: CountryCodes.MA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1493,7 +1503,7 @@ const postalAddressCountries = [
   },
   {
     name: "Mozambique",
-    iso: "MZ",
+    iso: CountryCodes.MZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1504,7 +1514,7 @@ const postalAddressCountries = [
   },
   {
     name: "Myanmar",
-    iso: "MM",
+    iso: CountryCodes.MM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1514,7 +1524,7 @@ const postalAddressCountries = [
   },
   {
     name: "Namibia",
-    iso: "NA",
+    iso: CountryCodes.NA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1523,7 +1533,7 @@ const postalAddressCountries = [
   },
   {
     name: "Nauru",
-    iso: "NR",
+    iso: CountryCodes.NR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1532,7 +1542,7 @@ const postalAddressCountries = [
   },
   {
     name: "Nepal",
-    iso: "NP",
+    iso: CountryCodes.NP,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1542,7 +1552,7 @@ const postalAddressCountries = [
   },
   {
     name: "Netherlands",
-    iso: "NL",
+    iso: CountryCodes.NL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1552,7 +1562,7 @@ const postalAddressCountries = [
   },
   {
     name: "Netherlands Antilles",
-    iso: "AN",
+    iso: CountryCodes.AN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1562,7 +1572,7 @@ const postalAddressCountries = [
   },
   {
     name: "New Caledonia",
-    iso: "NC",
+    iso: CountryCodes.NC,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1572,7 +1582,7 @@ const postalAddressCountries = [
   },
   {
     name: "New Zealand",
-    iso: "NZ",
+    iso: CountryCodes.NZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1583,7 +1593,7 @@ const postalAddressCountries = [
   },
   {
     name: "Nicaragua",
-    iso: "NI",
+    iso: CountryCodes.NI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1594,7 +1604,7 @@ const postalAddressCountries = [
   },
   {
     name: "Niger",
-    iso: "NE",
+    iso: CountryCodes.NE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1604,7 +1614,7 @@ const postalAddressCountries = [
   },
   {
     name: "Nigeria",
-    iso: "NG",
+    iso: CountryCodes.NG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1615,7 +1625,7 @@ const postalAddressCountries = [
   },
   {
     name: "Niue",
-    iso: "NU",
+    iso: CountryCodes.NU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1625,7 +1635,7 @@ const postalAddressCountries = [
   },
   {
     name: "Norfolk Island",
-    iso: "NF",
+    iso: CountryCodes.NF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1636,7 +1646,7 @@ const postalAddressCountries = [
   },
   {
     name: "Northern Mariana Islands",
-    iso: "MP",
+    iso: CountryCodes.MP,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1647,7 +1657,7 @@ const postalAddressCountries = [
   },
   {
     name: "North Korea",
-    iso: "KP",
+    iso: CountryCodes.KP,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1656,7 +1666,7 @@ const postalAddressCountries = [
   },
   {
     name: "Norway",
-    iso: "NO",
+    iso: CountryCodes.NO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1666,7 +1676,7 @@ const postalAddressCountries = [
   },
   {
     name: "Oman",
-    iso: "OM",
+    iso: CountryCodes.OM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1677,7 +1687,7 @@ const postalAddressCountries = [
   },
   {
     name: "Pakistan",
-    iso: "PK",
+    iso: CountryCodes.PK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1687,7 +1697,7 @@ const postalAddressCountries = [
   },
   {
     name: "Palau",
-    iso: "PW",
+    iso: CountryCodes.PW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1698,7 +1708,7 @@ const postalAddressCountries = [
   },
   {
     name: "Palestinian Territory",
-    iso: "PS",
+    iso: CountryCodes.PS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1708,7 +1718,7 @@ const postalAddressCountries = [
   },
   {
     name: "Panama",
-    iso: "PA",
+    iso: CountryCodes.PA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1718,7 +1728,7 @@ const postalAddressCountries = [
   },
   {
     name: "Papua New Guinea",
-    iso: "PG",
+    iso: CountryCodes.PG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1729,7 +1739,7 @@ const postalAddressCountries = [
   },
   {
     name: "Paraguay",
-    iso: "PY",
+    iso: CountryCodes.PY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1739,7 +1749,7 @@ const postalAddressCountries = [
   },
   {
     name: "Peru",
-    iso: "PE",
+    iso: CountryCodes.PE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1750,7 +1760,7 @@ const postalAddressCountries = [
   },
   {
     name: "Philippines",
-    iso: "PH",
+    iso: CountryCodes.PH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1762,7 +1772,7 @@ const postalAddressCountries = [
   },
   {
     name: "Pitcairn",
-    iso: "PN",
+    iso: CountryCodes.PN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1772,7 +1782,7 @@ const postalAddressCountries = [
   },
   {
     name: "Poland",
-    iso: "PL",
+    iso: CountryCodes.PL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1782,7 +1792,7 @@ const postalAddressCountries = [
   },
   {
     name: "Portugal",
-    iso: "PT",
+    iso: CountryCodes.PT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1792,7 +1802,7 @@ const postalAddressCountries = [
   },
   {
     name: "Puerto Rico",
-    iso: "PR",
+    iso: CountryCodes.PR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1802,7 +1812,7 @@ const postalAddressCountries = [
   },
   {
     name: "Qatar",
-    iso: "QA",
+    iso: CountryCodes.QA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1812,7 +1822,7 @@ const postalAddressCountries = [
   },
   {
     name: "Reunion",
-    iso: "RE",
+    iso: CountryCodes.RE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1822,7 +1832,7 @@ const postalAddressCountries = [
   },
   {
     name: "Romania",
-    iso: "RO",
+    iso: CountryCodes.RO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1832,7 +1842,7 @@ const postalAddressCountries = [
   },
   {
     name: "Russia",
-    iso: "RU",
+    iso: CountryCodes.RU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1843,7 +1853,7 @@ const postalAddressCountries = [
   },
   {
     name: "Rwanda",
-    iso: "RW",
+    iso: CountryCodes.RW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1852,7 +1862,7 @@ const postalAddressCountries = [
   },
   {
     name: "Saint BarthÈlemy",
-    iso: "BL",
+    iso: CountryCodes.BL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1862,7 +1872,7 @@ const postalAddressCountries = [
   },
   {
     name: "Saint Helena",
-    iso: "SH",
+    iso: CountryCodes.SH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1872,7 +1882,7 @@ const postalAddressCountries = [
   },
   {
     name: "Saint Kitts and Nevis",
-    iso: "KN",
+    iso: CountryCodes.KN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1882,7 +1892,7 @@ const postalAddressCountries = [
   },
   {
     name: "Saint Lucia",
-    iso: "LC",
+    iso: CountryCodes.LC,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1891,7 +1901,7 @@ const postalAddressCountries = [
   },
   {
     name: "Saint Martin (French part)",
-    iso: "MF",
+    iso: CountryCodes.MF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1901,7 +1911,7 @@ const postalAddressCountries = [
   },
   {
     name: "Saint Pierre and Miquelon",
-    iso: "PM",
+    iso: CountryCodes.PM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1911,7 +1921,7 @@ const postalAddressCountries = [
   },
   {
     name: "Saint Vincent and the Grenadines",
-    iso: "VC",
+    iso: CountryCodes.VC,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1920,7 +1930,7 @@ const postalAddressCountries = [
   },
   {
     name: "Samoa",
-    iso: "WS",
+    iso: CountryCodes.WS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1929,7 +1939,7 @@ const postalAddressCountries = [
   },
   {
     name: "San Marino",
-    iso: "SM",
+    iso: CountryCodes.SM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1939,7 +1949,7 @@ const postalAddressCountries = [
   },
   {
     name: "Sao Tome and Principe",
-    iso: "ST",
+    iso: CountryCodes.ST,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1948,7 +1958,7 @@ const postalAddressCountries = [
   },
   {
     name: "Saudi Arabia",
-    iso: "SA",
+    iso: CountryCodes.SA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1958,7 +1968,7 @@ const postalAddressCountries = [
   },
   {
     name: "Senegal",
-    iso: "SN",
+    iso: CountryCodes.SN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1968,7 +1978,7 @@ const postalAddressCountries = [
   },
   {
     name: "Serbia",
-    iso: "RS",
+    iso: CountryCodes.RS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1978,7 +1988,7 @@ const postalAddressCountries = [
   },
   {
     name: "Seychelles",
-    iso: "SC",
+    iso: CountryCodes.SC,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1988,7 +1998,7 @@ const postalAddressCountries = [
   },
   {
     name: "Sierra Leone",
-    iso: "SL",
+    iso: CountryCodes.SL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -1997,7 +2007,7 @@ const postalAddressCountries = [
   },
   {
     name: "Singapore",
-    iso: "SG",
+    iso: CountryCodes.SG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2007,7 +2017,7 @@ const postalAddressCountries = [
   },
   {
     name: "Slovakia",
-    iso: "SK",
+    iso: CountryCodes.SK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2017,7 +2027,7 @@ const postalAddressCountries = [
   },
   {
     name: "Slovenia",
-    iso: "SI",
+    iso: CountryCodes.SI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2027,7 +2037,7 @@ const postalAddressCountries = [
   },
   {
     name: "Solomon Islands",
-    iso: "SB",
+    iso: CountryCodes.SB,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2036,7 +2046,7 @@ const postalAddressCountries = [
   },
   {
     name: "Somalia",
-    iso: "SO",
+    iso: CountryCodes.SO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2047,7 +2057,7 @@ const postalAddressCountries = [
   },
   {
     name: "South Africa",
-    iso: "ZA",
+    iso: CountryCodes.ZA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2058,7 +2068,7 @@ const postalAddressCountries = [
   },
   {
     name: "South Georgia and the South Sandwich Islands",
-    iso: "GS",
+    iso: CountryCodes.GS,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2068,7 +2078,7 @@ const postalAddressCountries = [
   },
   {
     name: "South Korea",
-    iso: "KR",
+    iso: CountryCodes.KR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2080,7 +2090,7 @@ const postalAddressCountries = [
   },
   {
     name: "Spain",
-    iso: "ES",
+    iso: CountryCodes.ES,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2091,7 +2101,7 @@ const postalAddressCountries = [
   },
   {
     name: "Sri Lanka",
-    iso: "LK",
+    iso: CountryCodes.LK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2101,7 +2111,7 @@ const postalAddressCountries = [
   },
   {
     name: "Sudan",
-    iso: "SD",
+    iso: CountryCodes.SD,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2111,7 +2121,7 @@ const postalAddressCountries = [
   },
   {
     name: "Suriname",
-    iso: "SR",
+    iso: CountryCodes.SR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2121,7 +2131,7 @@ const postalAddressCountries = [
   },
   {
     name: "Svalbard and Jan Mayen",
-    iso: "SJ",
+    iso: CountryCodes.SJ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2131,7 +2141,7 @@ const postalAddressCountries = [
   },
   {
     name: "Swaziland",
-    iso: "SZ",
+    iso: CountryCodes.SZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2141,7 +2151,7 @@ const postalAddressCountries = [
   },
   {
     name: "Sweden",
-    iso: "SE",
+    iso: CountryCodes.SE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2151,7 +2161,7 @@ const postalAddressCountries = [
   },
   {
     name: "Switzerland",
-    iso: "CH",
+    iso: CountryCodes.CH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2161,7 +2171,7 @@ const postalAddressCountries = [
   },
   {
     name: "Syria",
-    iso: "SY",
+    iso: CountryCodes.SY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2171,7 +2181,7 @@ const postalAddressCountries = [
   },
   {
     name: "Taiwan",
-    iso: "TW",
+    iso: CountryCodes.TW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2182,7 +2192,7 @@ const postalAddressCountries = [
   },
   {
     name: "Tajikistan",
-    iso: "TJ",
+    iso: CountryCodes.TJ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2192,7 +2202,7 @@ const postalAddressCountries = [
   },
   {
     name: "Tanzania",
-    iso: "TZ",
+    iso: CountryCodes.TZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2201,7 +2211,7 @@ const postalAddressCountries = [
   },
   {
     name: "Thailand",
-    iso: "TH",
+    iso: CountryCodes.TH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2213,7 +2223,7 @@ const postalAddressCountries = [
   },
   {
     name: "Timor-Leste",
-    iso: "TL",
+    iso: CountryCodes.TL,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2222,7 +2232,7 @@ const postalAddressCountries = [
   },
   {
     name: "Togo",
-    iso: "TG",
+    iso: CountryCodes.TG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2231,7 +2241,7 @@ const postalAddressCountries = [
   },
   {
     name: "Tokelau",
-    iso: "TK",
+    iso: CountryCodes.TK,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2241,7 +2251,7 @@ const postalAddressCountries = [
   },
   {
     name: "Tonga",
-    iso: "TO",
+    iso: CountryCodes.TO,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2250,7 +2260,7 @@ const postalAddressCountries = [
   },
   {
     name: "Trinidad and Tobago",
-    iso: "TT",
+    iso: CountryCodes.TT,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2259,7 +2269,7 @@ const postalAddressCountries = [
   },
   {
     name: "Tunisia",
-    iso: "TN",
+    iso: CountryCodes.TN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2269,7 +2279,7 @@ const postalAddressCountries = [
   },
   {
     name: "Turkey",
-    iso: "TR",
+    iso: CountryCodes.TR,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2280,7 +2290,7 @@ const postalAddressCountries = [
   },
   {
     name: "Turkmenistan",
-    iso: "TM",
+    iso: CountryCodes.TM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2290,7 +2300,7 @@ const postalAddressCountries = [
   },
   {
     name: "Turks and Caicos Islands",
-    iso: "TC",
+    iso: CountryCodes.TC,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2300,7 +2310,7 @@ const postalAddressCountries = [
   },
   {
     name: "Tuvalu",
-    iso: "TV",
+    iso: CountryCodes.TV,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2310,7 +2320,7 @@ const postalAddressCountries = [
   },
   {
     name: "U.S. Virgin Islands",
-    iso: "VI",
+    iso: CountryCodes.VI,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2321,7 +2331,7 @@ const postalAddressCountries = [
   },
   {
     name: "Uganda",
-    iso: "UG",
+    iso: CountryCodes.UG,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2330,7 +2340,7 @@ const postalAddressCountries = [
   },
   {
     name: "Ukraine",
-    iso: "UA",
+    iso: CountryCodes.UA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2341,7 +2351,7 @@ const postalAddressCountries = [
   },
   {
     name: "United Arab Emirates",
-    iso: "AE",
+    iso: CountryCodes.AE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2350,7 +2360,7 @@ const postalAddressCountries = [
   },
   {
     name: "United Kingdom",
-    iso: "GB",
+    iso: CountryCodes.GB,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2361,7 +2371,7 @@ const postalAddressCountries = [
   },
   {
     name: "United States",
-    iso: "US",
+    iso: CountryCodes.US,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2372,7 +2382,7 @@ const postalAddressCountries = [
   },
   {
     name: "United States Minor Outlying Islands",
-    iso: "UM",
+    iso: CountryCodes.UM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2383,7 +2393,7 @@ const postalAddressCountries = [
   },
   {
     name: "Uruguay",
-    iso: "UY",
+    iso: CountryCodes.UY,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2394,7 +2404,7 @@ const postalAddressCountries = [
   },
   {
     name: "Uzbekistan",
-    iso: "UZ",
+    iso: CountryCodes.UZ,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2404,7 +2414,7 @@ const postalAddressCountries = [
   },
   {
     name: "Vanuatu",
-    iso: "VU",
+    iso: CountryCodes.VU,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2413,7 +2423,7 @@ const postalAddressCountries = [
   },
   {
     name: "Vatican",
-    iso: "VA",
+    iso: CountryCodes.VA,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2423,7 +2433,7 @@ const postalAddressCountries = [
   },
   {
     name: "Venezuela",
-    iso: "VE",
+    iso: CountryCodes.VE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2434,7 +2444,7 @@ const postalAddressCountries = [
   },
   {
     name: "Vietnam",
-    iso: "VN",
+    iso: CountryCodes.VN,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2445,7 +2455,7 @@ const postalAddressCountries = [
   },
   {
     name: "Wallis and Futuna",
-    iso: "WF",
+    iso: CountryCodes.WF,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2455,7 +2465,7 @@ const postalAddressCountries = [
   },
   {
     name: "Western Sahara",
-    iso: "EH",
+    iso: CountryCodes.EH,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2465,7 +2475,7 @@ const postalAddressCountries = [
   },
   {
     name: "Yemen",
-    iso: "YE",
+    iso: CountryCodes.YE,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2475,7 +2485,7 @@ const postalAddressCountries = [
   },
   {
     name: "Zambia",
-    iso: "ZM",
+    iso: CountryCodes.ZM,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
@@ -2485,7 +2495,7 @@ const postalAddressCountries = [
   },
   {
     name: "Zimbabwe",
-    iso: "ZW",
+    iso: CountryCodes.ZW,
     fields: {
       addressLine1: "Address 1",
       addressLine2: "Address 2",
