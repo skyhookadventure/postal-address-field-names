@@ -25,7 +25,6 @@ jobs:
 
   publish-npm:
     if: github.event_name == 'push' # Push/merge only, not on PR
-    needs: [test]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
