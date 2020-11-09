@@ -78,6 +78,7 @@ The module includes a few useful Typescript helpers:
 
 - CountryCodes - ENUM with each 2-letter country code in capital letters
 - AddressFields - Full OASIS XAL address field names interface
+- CountryAddressDetails - The type exported by this module (as `Array<CountryAddressDetails>`)
 
 ## Built by Skyhook
 
