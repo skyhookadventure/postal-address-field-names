@@ -82,4 +82,4 @@ The module includes a few useful Typescript helpers:
 
 ## Built by Skyhook
 
-This module is contributed by the team at [Skyhook](https://www.skyhookadventure.com/).
+This module is contributed by the team at [Skyhook](https://www.skyhookadventure.com/)
