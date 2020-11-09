@@ -59,13 +59,13 @@ exist (and are named the same) for all countries. These are:
 ### Get field names for a specific country
 
 ```typescript
-import postalAddressFieldNames, {
+import countryAddressDetails, {
   CountryCodes,
 } from "postal-address-field-names";
 
 function getFieldNames(countryISO: CountryCodes) {
   const countryISO = "GB";
-  const country = postalAddressFieldNames.find(
+  const country = countryAddressDetails.find(
     (country) => country.iso === countryISO
   );
   return country.fields;
