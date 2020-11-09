@@ -7,6 +7,10 @@ export { AddressFields, CountryAddressDetails, CountryCodes } from "./types";
 
 /**
  * Postal Address Field Names
+ *
+ * @example
+ * // Get a specific country by ISO
+ * const details = countryAddressDetails.find((i) => i.iso === countryISO);
  */
 const postalAddressCountries: CountryAddressDetails[] = [
   {
