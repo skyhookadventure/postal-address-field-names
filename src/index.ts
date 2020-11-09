@@ -1,0 +1,2497 @@
+const postalAddressCountries = [
+  {
+    name: "Afghanistan",
+    iso: "AF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Aland Islands",
+    iso: "AX",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Albania",
+    iso: "AL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Algeria",
+    iso: "DZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "American Samoa",
+    iso: "AS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "Andorra",
+    iso: "AD",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Angola",
+    iso: "AO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Anguilla",
+    iso: "AI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Antarctica",
+    iso: "AQ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Antigua and Barbuda",
+    iso: "AG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Argentina",
+    iso: "AR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Armenia",
+    iso: "AM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Aruba",
+    iso: "AW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Australia",
+    iso: "AU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City/suburb",
+      administrativeArea: "State",
+      postalCode: "Postcode",
+    },
+  },
+  {
+    name: "Austria",
+    iso: "AT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Azerbaijan",
+    iso: "AZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Bahamas",
+    iso: "BS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Island",
+    },
+  },
+  {
+    name: "Bahrain",
+    iso: "BH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Bangladesh",
+    iso: "BD",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Barbados",
+    iso: "BB",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Belarus",
+    iso: "BY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Belgium",
+    iso: "BE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Belize",
+    iso: "BZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Benin",
+    iso: "BJ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Bermuda",
+    iso: "BM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Bhutan",
+    iso: "BT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Bolivia",
+    iso: "BO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Bosnia and Herzegovina",
+    iso: "BA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Botswana",
+    iso: "BW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Bouvet Island",
+    iso: "BV",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Brazil",
+    iso: "BR",
+    fields: {
+      addressLine1: "Thoroughfare",
+      addressLine2: "Complement",
+      dependentLocality: "Neighborhood",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "British Indian Ocean Territory",
+    iso: "IO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "British Virgin Islands",
+    iso: "VG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Brunei",
+    iso: "BN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Bulgaria",
+    iso: "BG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Burkina Faso",
+    iso: "BF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Burundi",
+    iso: "BI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Cambodia",
+    iso: "KH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Cameroon",
+    iso: "CM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Canada",
+    iso: "CA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Cape Verde",
+    iso: "CV",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Island",
+    },
+  },
+  {
+    name: "Cayman Islands",
+    iso: "KY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      administrativeArea: "Island",
+    },
+  },
+  {
+    name: "Central African Republic",
+    iso: "CF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Chad",
+    iso: "TD",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Chile",
+    iso: "CL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "China",
+    iso: "CN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      dependentLocality: "District",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Christmas Island",
+    iso: "CX",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Cocos (Keeling) Islands",
+    iso: "CC",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Colombia",
+    iso: "CO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Comoros",
+    iso: "KM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Congo (Brazzaville)",
+    iso: "CG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Congo (Kinshasa)",
+    iso: "CD",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Cook Islands",
+    iso: "CK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Costa Rica",
+    iso: "CR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Cuba",
+    iso: "CU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Croatia",
+    iso: "HR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "CuraÁao",
+    iso: "CW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Cyprus",
+    iso: "CY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Czech Republic",
+    iso: "CZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Denmark",
+    iso: "DK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Djibouti",
+    iso: "DJ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Dominica",
+    iso: "DM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Dominican Republic",
+    iso: "DO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Ecuador",
+    iso: "EC",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Egypt",
+    iso: "EG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Governorate",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "El Salvador",
+    iso: "SV",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Equatorial Guinea",
+    iso: "GQ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Eritrea",
+    iso: "ER",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Estonia",
+    iso: "EE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Ethiopia",
+    iso: "ET",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Falkland Islands",
+    iso: "FK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Faroe Islands",
+    iso: "FO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Fiji",
+    iso: "FJ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Finland",
+    iso: "FI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "France",
+    iso: "FR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "French Guiana",
+    iso: "GF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "French Polynesia",
+    iso: "PF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Island",
+    },
+  },
+  {
+    name: "French Southern Territories",
+    iso: "TF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Gabon",
+    iso: "GA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Gambia",
+    iso: "GM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Georgia",
+    iso: "GE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Germany",
+    iso: "DE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Ghana",
+    iso: "GH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Gibraltar",
+    iso: "GI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Greece",
+    iso: "GR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Greenland",
+    iso: "GL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Grenada",
+    iso: "GD",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Guadeloupe",
+    iso: "GP",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Guam",
+    iso: "GU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "Guatemala",
+    iso: "GT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Guernsey",
+    iso: "GG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Guinea",
+    iso: "GN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Guinea-Bissau",
+    iso: "GW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Guyana",
+    iso: "GY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Haiti",
+    iso: "HT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Heard Island and McDonald Islands",
+    iso: "HM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Honduras",
+    iso: "HN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Hong Kong S.A.R., China",
+    iso: "HK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "District",
+      administrativeArea: "Area",
+    },
+  },
+  {
+    name: "Hungary",
+    iso: "HU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Iceland",
+    iso: "IS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "India",
+    iso: "IN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "PIN code",
+    },
+  },
+  {
+    name: "Indonesia",
+    iso: "ID",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City/regency",
+      postalCode: "Postal code",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Iran",
+    iso: "IR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      dependentLocality: "Neighborhood",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Iraq",
+    iso: "IQ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Ireland",
+    iso: "IE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "Town/city",
+      postalCode: "EIR Code",
+      administrativeArea: "County",
+    },
+  },
+  {
+    name: "Isle of Man",
+    iso: "IM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Israel",
+    iso: "IL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Italy",
+    iso: "IT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Ivory Coast",
+    iso: "CI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Jamaica",
+    iso: "JM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Parish",
+    },
+  },
+  {
+    name: "Japan",
+    iso: "JP",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Prefecture",
+    },
+  },
+  {
+    name: "Jersey",
+    iso: "JE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Jordan",
+    iso: "JO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Kazakhstan",
+    iso: "KZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Kenya",
+    iso: "KE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Kiribati",
+    iso: "KI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Island",
+    },
+  },
+  {
+    name: "Kuwait",
+    iso: "KW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Kyrgyzstan",
+    iso: "KG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Laos",
+    iso: "LA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Latvia",
+    iso: "LV",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Lebanon",
+    iso: "LB",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Lesotho",
+    iso: "LS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Liberia",
+    iso: "LR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Libya",
+    iso: "LY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Liechtenstein",
+    iso: "LI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Lithuania",
+    iso: "LT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Luxembourg",
+    iso: "LU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Macao S.A.R., China",
+    iso: "MO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Macedonia",
+    iso: "MK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Madagascar",
+    iso: "MG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Malawi",
+    iso: "MW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Malaysia",
+    iso: "MY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      dependentLocality: "Village/township",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Maldives",
+    iso: "MV",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Mali",
+    iso: "ML",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Malta",
+    iso: "MT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Marshall Islands",
+    iso: "MH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "Martinique",
+    iso: "MQ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Mauritania",
+    iso: "MR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Mauritius",
+    iso: "MU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Mayotte",
+    iso: "YT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Mexico",
+    iso: "MX",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      dependentLocality: "Neighborhood",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Micronesia",
+    iso: "FM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "Moldova",
+    iso: "MD",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Monaco",
+    iso: "MC",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Mongolia",
+    iso: "MN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Montenegro",
+    iso: "ME",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Montserrat",
+    iso: "MS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Morocco",
+    iso: "MA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Mozambique",
+    iso: "MZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Myanmar",
+    iso: "MM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Namibia",
+    iso: "NA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Nauru",
+    iso: "NR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      administrativeArea: "District",
+    },
+  },
+  {
+    name: "Nepal",
+    iso: "NP",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Netherlands",
+    iso: "NL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Netherlands Antilles",
+    iso: "AN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "New Caledonia",
+    iso: "NC",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "New Zealand",
+    iso: "NZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "Town/city",
+      administrativeArea: "Region",
+      postalCode: "Postcode",
+    },
+  },
+  {
+    name: "Nicaragua",
+    iso: "NI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Department",
+    },
+  },
+  {
+    name: "Niger",
+    iso: "NE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Nigeria",
+    iso: "NG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Niue",
+    iso: "NU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Norfolk Island",
+    iso: "NF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Northern Mariana Islands",
+    iso: "MP",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "North Korea",
+    iso: "KP",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Norway",
+    iso: "NO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Oman",
+    iso: "OM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Pakistan",
+    iso: "PK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Palau",
+    iso: "PW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "Palestinian Territory",
+    iso: "PS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Panama",
+    iso: "PA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Papua New Guinea",
+    iso: "PG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Paraguay",
+    iso: "PY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Peru",
+    iso: "PE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      administrativeArea: "Region",
+      locality: "District",
+    },
+  },
+  {
+    name: "Philippines",
+    iso: "PH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      dependentLocality: "Suburb",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Pitcairn",
+    iso: "PN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Poland",
+    iso: "PL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Portugal",
+    iso: "PT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Puerto Rico",
+    iso: "PR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "Qatar",
+    iso: "QA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Reunion",
+    iso: "RE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Romania",
+    iso: "RO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Russia",
+    iso: "RU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Rwanda",
+    iso: "RW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Saint BarthÈlemy",
+    iso: "BL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Saint Helena",
+    iso: "SH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Saint Kitts and Nevis",
+    iso: "KN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Island",
+    },
+  },
+  {
+    name: "Saint Lucia",
+    iso: "LC",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Saint Martin (French part)",
+    iso: "MF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Saint Pierre and Miquelon",
+    iso: "PM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Saint Vincent and the Grenadines",
+    iso: "VC",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Samoa",
+    iso: "WS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "San Marino",
+    iso: "SM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Sao Tome and Principe",
+    iso: "ST",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Saudi Arabia",
+    iso: "SA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Senegal",
+    iso: "SN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Serbia",
+    iso: "RS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Seychelles",
+    iso: "SC",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Island",
+    },
+  },
+  {
+    name: "Sierra Leone",
+    iso: "SL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Singapore",
+    iso: "SG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Slovakia",
+    iso: "SK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Slovenia",
+    iso: "SI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Solomon Islands",
+    iso: "SB",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Somalia",
+    iso: "SO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "South Africa",
+    iso: "ZA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "South Georgia and the South Sandwich Islands",
+    iso: "GS",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "South Korea",
+    iso: "KR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      dependentLocality: "District",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Spain",
+    iso: "ES",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Sri Lanka",
+    iso: "LK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Sudan",
+    iso: "SD",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Suriname",
+    iso: "SR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Province",
+    },
+  },
+  {
+    name: "Svalbard and Jan Mayen",
+    iso: "SJ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Swaziland",
+    iso: "SZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Sweden",
+    iso: "SE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Switzerland",
+    iso: "CH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Syria",
+    iso: "SY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Taiwan",
+    iso: "TW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Tajikistan",
+    iso: "TJ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Tanzania",
+    iso: "TZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Thailand",
+    iso: "TH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      dependentLocality: "Suburb",
+      locality: "City",
+      administrativeArea: "Province",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Timor-Leste",
+    iso: "TL",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Togo",
+    iso: "TG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Tokelau",
+    iso: "TK",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Tonga",
+    iso: "TO",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Trinidad and Tobago",
+    iso: "TT",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Tunisia",
+    iso: "TN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Turkey",
+    iso: "TR",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      administrativeArea: "Province",
+      locality: "City",
+    },
+  },
+  {
+    name: "Turkmenistan",
+    iso: "TM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Turks and Caicos Islands",
+    iso: "TC",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Tuvalu",
+    iso: "TV",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Island",
+    },
+  },
+  {
+    name: "U.S. Virgin Islands",
+    iso: "VI",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Uganda",
+    iso: "UG",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Ukraine",
+    iso: "UA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "Region",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "United Arab Emirates",
+    iso: "AE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      administrativeArea: "Emirate",
+    },
+  },
+  {
+    name: "United Kingdom",
+    iso: "GB",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "Town/city",
+      administrativeArea: "County",
+      postalCode: "Postcode",
+    },
+  },
+  {
+    name: "United States",
+    iso: "US",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "United States Minor Outlying Islands",
+    iso: "UM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "ZIP code",
+    },
+  },
+  {
+    name: "Uruguay",
+    iso: "UY",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Uzbekistan",
+    iso: "UZ",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Vanuatu",
+    iso: "VU",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+  {
+    name: "Vatican",
+    iso: "VA",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Venezuela",
+    iso: "VE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+      administrativeArea: "State",
+    },
+  },
+  {
+    name: "Vietnam",
+    iso: "VN",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+      administrativeArea: "State",
+      postalCode: "Postal code",
+    },
+  },
+  {
+    name: "Wallis and Futuna",
+    iso: "WF",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Western Sahara",
+    iso: "EH",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Yemen",
+    iso: "YE",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Zambia",
+    iso: "ZM",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      postalCode: "Postal code",
+      locality: "City",
+    },
+  },
+  {
+    name: "Zimbabwe",
+    iso: "ZW",
+    fields: {
+      addressLine1: "Address 1",
+      addressLine2: "Address 2",
+      locality: "City",
+    },
+  },
+];
+
+export default postalAddressCountries;
