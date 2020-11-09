@@ -1,4 +1,4 @@
-name: node-module-cd
+name: CD
 
 on:
   push:
