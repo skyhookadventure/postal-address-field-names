@@ -1,6 +1,6 @@
 {
   "name": "postal-address-field-names",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Internationalisation library for postal address field names, using the Oasis XAL standard",
   "main": "dist/index.js",
   "repository": "https://github.com/skyhookadventure/postal-address-field-names.git",
