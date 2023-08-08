@@ -45,6 +45,7 @@ const postalAddressCountries: CountryAddressDetails[] = [
       addressLine1: "Address 1",
       addressLine2: "Address 2",
       locality: "City",
+      postalCode: "Postal code",
     },
   },
   {
